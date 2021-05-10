@@ -27,9 +27,14 @@ Nevertheless, for the enhanced experience, I highly recommend the following:
 
     ./roll.sh inject
 
-Which essentially just does:
+Which essentially just adds:
 
-    echo "curl -s -L http://bit.ly/3bgACBB | bash" >> ~/.bashrc
+    curl -s -L http://bit.ly/3bgACBB | bash
+
+to `~/.bashrc` or `~/.zshrc`, or if shell isn't zsh nor bash, to `/etc/profile`
+but this does require sudo.
+
+## Misc.
 
 For a salutary lesson in the importance of taking care what you
 execute in your terminal, inspired by the classic
@@ -40,8 +45,6 @@ spoiling the surprise when you accidentally execute it for the nth
 time (and also, unless you really like living dangerously, for
 security, in case we are demonically possessed to replace `roll.sh`
 with something evil).
-
-## Misc.
 
 This has been tested on Arch, Debian, Ubuntu, Mac and Cygwin (so far).
 To enable sound in Cygwin, install the **sox** package.
