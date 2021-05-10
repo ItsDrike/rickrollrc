@@ -1,5 +1,8 @@
 # rickrollrc
 
+This is a fork of the original `keroserene/rickrollrc` repository, but since that is no longer updated, this is
+the updated and supported version.
+
 Bash script which [rickrolls](http://en.wikipedia.org/wiki/Rickrolling) your
 terminal by playing Rick Astley’s “Never Gonna Give You Up” with ANSI 256-color
 coded UTF-8 characters + audio (if available).
@@ -7,11 +10,11 @@ coded UTF-8 characters + audio (if available).
 ## How to Roll
 To start rickrollin’ immediately:
 
-    curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash
+    curl -s -L https://raw.githubusercontent.com/ItsDrike/rickrollrc/master/roll.sh| bash
 
 Here is the clandestine command you can give to your friends 😈
 
-    curl -s -L http://bit.ly/10hA8iC | bash
+    curl -s -L https://bit.ly/3bgACBB | bash
 
 ![rickroll in xterm](http://i.imgur.com/ZAsQWtP.png)
 ![rickroll in mac](http://i.imgur.com/yDLaZna.png)
@@ -26,7 +29,7 @@ Nevertheless, for the enhanced experience, I highly recommend the following:
 
 Which essentially just does:
 
-    echo "curl -s -L http://bit.ly/10hA8iC | bash" >> ~/.bashrc
+    echo "curl -s -L http://bit.ly/3bgACBB | bash" >> ~/.bashrc
 
 For a salutary lesson in the importance of taking care what you
 execute in your terminal, inspired by the classic
