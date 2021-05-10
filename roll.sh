@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Rick Astley in your Terminal.
-# By Serene Han and Justine Tunney <3
-version='1.1'
+# By Serene Han and Justine Tunney, updated by ItsDrike <3
+version='1.2'
 rick='http://keroserene.net/lol'
 video="$rick/astley80.full.bz2"
 # TODO: I'll let someone with mac or windows machine send a pull request
@@ -9,12 +9,22 @@ video="$rick/astley80.full.bz2"
 audio_gsm="$rick/roll.gsm"
 audio_raw="$rick/roll.s16"
 audpid=0
-NEVER_GONNA='curl -s -L http://bit.ly/10hA8iC | bash'
-MAKE_YOU_CRY="$HOME/.bashrc"
+
+NEVER_GONNA='curl -s -L http://bit.ly/3bgACBB | bash'
+if [[ $SHELL == "/bin/bash" ]]; then
+	MAKE_YOU_CRY="$HOME/.bashrc"
+elif [[ $SHELL == "/bin/zsh" || $SHELL == "/usr/bin/zsh" ]]; then
+	MAKE_YOU_CRY="$HOME/.zshrc"
+else
+	# This will require sudo
+	MAKE_YOU_CRY="/etc/profile"
+fi
+
 red='\x1b[38;5;9m'
 yell='\x1b[38;5;216m'
 green='\x1b[38;5;10m'
 purp='\x1b[38;5;171m'
+
 echo -en '\x1b[s'  # Save cursor.
 
 has?() { hash $1 2>/dev/null; }
