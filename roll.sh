@@ -2,7 +2,7 @@
 # Rick Astley in your Terminal.
 # By Serene Han and Justine Tunney, updated by ItsDrike <3
 version='1.2'
-rick='http://keroserene.net/lol'
+rick='https://keroserene.net/lol'
 video="$rick/astley80.full.bz2"
 # TODO: I'll let someone with mac or windows machine send a pull request
 # to get gsm going again :)
